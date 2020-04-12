@@ -1,0 +1,209 @@
+/* In order to validate your CSS code, click on the arrow at the top right of this window. Don't forget, you can have a look here : https://blog.codepen.io/2017/10/11/analyze-css-now-using-stylelint/ 
+ */
+
+/* Your CSS code here */
+
+* {
+  box-sizing: border-box; /*width setting guaranteed*/
+}
+
+body {
+  font-family: Amatic SC;
+  color: black;
+}
+
+/* Format boxes for consistent look*/
+.box {
+  background-color: #f2f2f2;
+  border: 1px solid #ddd;
+  text-align: left;
+  padding: 0px 0px 10px 10px;
+  margin: 0px 0.5% 20px 0.5%;
+  border-radius: 5px;
+}
+
+/********************Nav Bar*************************/
+#navbar li {
+  font-size: 1.5em;
+  padding: 0px 0px 10px 15px;
+  list-style-type: "\266C";
+}
+
+/****************** Performances *******************/
+h3 {
+  position: relative; /* used to position <h3> within <li> */
+  left: 70%;
+  width: 30%;
+  border-left: 1px solid #ddd;
+  text-align: center;
+  margin: 0px;
+  padding: 5px;
+}
+
+/* Different background colour for each performance*/
+.Laugh {
+  background-color: rgb(248, 191, 229);
+  border-radius: 3px;
+}
+.Dream {
+  background-color: rgb(176, 250, 215);
+  border-radius: 3px;
+}
+.Marvel-at {
+  background-color: rgb(177, 187, 243);
+  border-radius: 3px;
+}
+
+li.box {
+  float: left;
+  height: 150px;
+  list-style: none;
+}
+
+/*without this, laugh is pushed to the right as there's a default initial padding, figured out using inspect in google developer tools*/
+#Performances + ul {
+  padding-inline-start: 0px;
+}
+
+/*************************About Us*************************/
+#About ~ p {
+  margin: 0px 0.5% 20px 0.5%;
+}
+
+/**************************Prices**************************/
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table td,
+table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+td,
+.top th {
+  text-align: center;
+}
+
+/************************* Form **************************/
+/* Style inputs with type="text", select elements and textareas */
+input[type="text"],
+select,
+textarea {
+  width: 100%; /* Full width */
+  padding: 10px; /* Some padding */
+  border: 1px solid #ddd;
+  border-radius: 5px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+  font-family: Amatic SC;
+}
+/* Style the submit button with a specific background color etc */
+button[type="submit"] {
+  background-color: #4caf50;
+  color: white;
+  padding: 5px 10px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1em;
+  font-family: Amatic SC;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+button[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin: 0px 0.5% 20px 0.5%;
+}
+
+/*****************Simple Responsive Framework*************/
+/* Large devices only */
+@media screen and (min-width: 992px) {
+  .col-lg-1 {
+    width: 7.33%;
+  }
+  .col-lg-2 {
+    width: 15.66%;
+  }
+  .col-lg-3 {
+    width: 24%;
+  }
+  .col-lg-4 {
+    width: 32.33%;
+  }
+  .col-lg-5 {
+    width: 40.66%;
+  }
+  .col-lg-6 {
+    width: 49%;
+  }
+  .col-lg-7 {
+    width: 57.33%;
+  }
+  .col-lg-8 {
+    width: 65.66%;
+  }
+  .col-lg-9 {
+    width: 73.99%;
+  }
+  .col-lg-10 {
+    width: 82.33%;
+  }
+  .col-lg-11 {
+    width: 90.66%;
+  }
+  .col-lg-12 {
+    width: 100%;
+  }
+}
+
+/* Medium devices only */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .col-md-1 {
+    width: 7.33%;
+  }
+  .col-md-2 {
+    width: 15.66%;
+  }
+  .col-md-3 {
+    width: 24%;
+  }
+  .col-md-4 {
+    width: 32.33%;
+  }
+  .col-md-5 {
+    width: 40.66%;
+  }
+  .col-md-6 {
+    width: 49%;
+  }
+  .col-md-7 {
+    width: 57.33%;
+  }
+  .col-md-8 {
+    width: 65.66%;
+  }
+  .col-md-9 {
+    width: 73.99%;
+  }
+  .col-md-10 {
+    width: 82.33%;
+  }
+  .col-md-11 {
+    width: 90.66%;
+  }
+  .col-md-12 {
+    width: 100%;
+  }
+}
